@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* centering the page */
+#page-wrapper{
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #f6f1e7;
+}
+
+/* header */
+header{
+    padding: 1%;
+    background-color: #6b3e2e;
+    color: #f3e8d8;
+}
+
+#nav-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+nav{
+    background-color: #8b5a3c;
+    width: 30%;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li{
+    width: 80%;
+    background-color: #a47148;
+    padding: 1%;
+    margin: 18% auto;
+    text-align: center;
+    border-radius: 6px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: calc(2px + 1.3vw);
+    color: #f6f1e7;
+}
+
+/* main stuff */
+/*used min-height here since I saw a piazza post say it was ok*/
+main{
+    padding: 1% 2%;
+    min-height: 150vh;
+    background-color: #f3e8d8;
+    text-align: center;
+    width: 70%;
+    color: #4a2c1d;
+}
+
+main h3{
+    margin: 2% 0;
+    font-size: calc(2px + 2vw);
+    color: #6b3e2e;
+}
+
+/*used a class here since I will be repeating it a lot*/
+.resume-point{
+    background-color: #fffaf2;
+    border-left: 6px solid #8b5a3c;
+    padding: 2%;
+    margin: 4% 0;
+    text-align: left;
+    border-radius: 8px;
+}
+
+.resume-point h4{
+    color: #6b3e2e;
+    margin-bottom: 1%;
+    font-size: calc(2px + 1.5vw);
+}
+
+.resume-point ul{
+    padding-left: 5%;
+}
+
+.resume-point li{
+    margin: 1% 0;
+    line-height: 1.4;
+}
+
+
+main p{
+    font-size: calc(2px + 2vw);
+    padding: 2%;
+}
+
+main img{
+    max-width: 40%;
+}
+
+footer{
+    background-color: #6b3e2e;
+    color: #f3e8d8;
+    padding: 1%;
+    text-align: center;
+}
+
+footer a{
+    color: #f3e8d8;
+}
+
+#time-date{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+/* calc section */
+#calculator-wrapper{
+    margin: 6% auto 2%;
+    padding: 3%;
+    background-color: #fffaf2;
+    border: 3px solid #8b5a3c;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+
+#calc-inputs{
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0;
+}
+
+#calc-inputs input{
+    width: 48%;
+    padding: 2%;
+    font-size: calc(8px + 1vw);
+}
+
+
+#calc-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#calc-buttons button{
+    width: 30%;
+    padding: 2%;
+    font-size: calc(8px + 1vw);
+    background-color: #8b5a3c;
+    color: #f6f1e7;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+#output{
+    margin-top: 4%;
+    font-size: calc(10px + 1.5vw);
+    text-align: center;
+}
+
+
+/* responsiveness */
+@media screen and (max-width: 1000px){
+    #nav-main{
+        flex-direction: column;
+    }
+
+    nav, main{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav li{
+        width: 18%;
+        padding: 1%;
+        margin: 1%;
+    }
+
+
+    header{
+        text-align: center;
+    }
+    /*used min-height here since I saw a piazza post say it was ok*/
+    main{
+        min-height: 100vh;
+    }
+
+    #calc-inputs{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #calc-inputs input{
+        width: 100%;
+    }
+
+    #calc-buttons button{
+        width: 48%;
+    }
+}

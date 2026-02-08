@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A website to display Jorge Lozano's resume">
+    <link type="text/css" rel="stylesheet" href="projects.css">
+    <title>Projects</title>
+</head>
+
+<body>
+
+<div id="page-wrapper">
+
+    <header>
+        <h1>Jorge Lozano</h1>
+        <p>My Projects</p>
+    </header>
+
+    <div id="nav-main">
+
+        <nav>
+            <ul>
+                <li><a href="../home/resume.html">Home</a></li>
+                <li><a href="../education/education.html">Education</a></li>
+                <li><a href="../experience/experience.html">Experience</a></li>
+                <li><a href="../achievements/achievements.html">Achievements</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="../clubs/clubs.html">On-Campus Impacts</a></li>
+            </ul>
+        </nav>
+
+        <main id="main">
+            <h3>Projects</h3>
+            <div class="resume-point">
+                <h4>Solo Game Development</h4>
+                <ul>
+                    <li>Developed a 2D Unity game featuring a unique color-switching mechanic and interactive enemy AI systems</li>
+                    <li>Strengthened knowledge of object-oriented programming and debugging by implementing features in C#</li>
+                </ul>
+            </div>
+            <div class="resume-point">
+                <h4>Markov Model</h4>
+                <ul>
+                    <li>Designed a Markov Model that took two sets of three texts from two different authors using Python dictionaries</li>
+                    <li>Verified whether texts were written by either of said authors, the model also applied to news outlets and poetry</li>
+                </ul>
+            </div>
+            <div class="resume-point">
+                <h4>PictoNote Android Application</h4>
+                <ul>
+                    <li>Developed a journaling app in Kotlin integrating the Gemini API to generate personalized, AI-driven life advice</li>
+                    <li>Implemented Google Firebase authentication and database services to track hundreds of user entries</li>
+                    <li>Integrated the entries stored in the database to the Gemini API allowing personalized advice to adapt over time</li>
+                    <li>Designed an intuitive UI to encourage journaling, with scalable backend architecture supporting feature expansion</li>
+                </ul>
+            </div>
+
+            <!-- calc -->
+            <div id="calculator-wrapper">
+                <h3>Calculator</h3>
+
+                <div id="calc-inputs">
+                    <input type="text" id="first-number" placeholder="First number">
+                    <input type="text" id="second-number" placeholder="Second number">
+                </div>
+
+                <div id="calc-buttons">
+                    <button onclick="addition()">+</button>
+                    <button onclick="subtraction()">-</button>
+                    <button onclick="multiplication()">*</button>
+                    <button onclick="division()">/</button>
+                    <button onclick="power()">**</button>
+                    <button onclick="clearCalc()">Clear</button>
+                </div>
+
+                <h4 id="output"></h4>
+            </div>
+            <script src="projects.js"></script>
+        </main>
+
+    </div>
+    <footer>
+        <p>All Rights Reserved by Jorge Lozano <a href=""> Credits</a> &#169;</p>
+        <div id="time-date"></div>
+    </footer>
+</div>
+</body>
+</html>
